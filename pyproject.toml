@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "axcontrol"
+version = "0.1.0"
+description = "OpenClaw CLI with AI‑Pro extensions"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [{name = "Nguyen Cuong", email = "nguyencuong@example.com"}]
+keywords = ["ai", "cli", "openclaw"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.dependencies]
+# Runtime dependencies (pin versions as needed)
+openai = "*"
+pydantic = "*"
+pydantic-settings = "*"
+fastapi = "*"
+uvicorn = "*"
+# sqlite3 is part of the Python stdlib

@@ -1,0 +1,116 @@
+{
+  "NextSteps": null,
+  "Attachments": true,
+  "Certifications": null,
+  "Progress": null,
+  "XP": {
+    "xp": {
+      "docsId": "b967dc52-b648-41fa-8f13-0ba557cc1fe3",
+      "totalXp": 0,
+      "currentLevel": 1,
+      "currentLevelLow": 0,
+      "currentLevelHigh": 1799,
+      "currentLevelPointsEarned": 0,
+      "nextLevel": 2,
+      "pointsUntilNextLevel": 1800,
+      "achievementCategories": {
+        "Unknown": 0,
+        "Modules": 0,
+        "Courses": 0,
+        "Qna": 0,
+        "Challenges": 0,
+        "Events": 0,
+        "LearningPaths": 0,
+        "Plans": 0,
+        "Special": 0
+      }
+    },
+    "achievements": []
+  },
+  "Q&A": {
+    "docsId": "b967dc52-b648-41fa-8f13-0ba557cc1fe3",
+    "questions": [],
+    "answers": [],
+    "comments": []
+  },
+  "TechProfile": {
+    "email": "nguyencuong.2509@gmail.com",
+    "locale": "vi-vn",
+    "country": "VN",
+    "contactPointTopicSetting": "OptInExplicit",
+    "isInstructor": false,
+    "isChallengeAdmin": false,
+    "isQnaModerator": false,
+    "source": "docs",
+    "authenticationModes": [
+      {
+        "id": "0003BFFDC9603AC8",
+        "type": "MSA",
+        "tenantId": "9188040d-6c67-4c5b-b112-36a304b66dad",
+        "upn": "nguyencuong.2509@gmail.com",
+        "oid": "00000000-0000-0000-853a-41989a1d908c",
+        "dateAcceptedPrivacyNotice": "2026-02-21T19:33:30.1429327+00:00",
+        "dateAdded": "2026-02-21T19:33:30.1429328+00:00"
+      }
+    ],
+    "transcriptSettings": {
+      "publicLink": {
+        "showModules": true,
+        "showLegalName": true,
+        "showMCID": true,
+        "showContactEmail": true
+      },
+      "print": {
+        "showModules": true,
+        "showLegalName": true,
+        "showMCID": true,
+        "showContactEmail": true
+      }
+    },
+    "certificationSettings": {
+      "print": {
+        "showLegalName": true,
+        "showMCID": true,
+        "showContactEmail": true
+      }
+    },
+    "qnaEmailPreferences": {
+      "allEmail": true,
+      "autoFollowAsked": true,
+      "autoFollowAnswered": true,
+      "autoFollowCommented": true,
+      "autoFollowTagged": false,
+      "emailEventSettings": {
+        "newMention": "instant",
+        "newModeration": "instant",
+        "answerPosted": "instant",
+        "answerAccepted": "instant",
+        "commentPosted": "instant",
+        "newPrivateMessage": "instant"
+      }
+    },
+    "sharingId": "CEAD22ABEF1665A9",
+    "legalName": {
+      "first": "",
+      "middle": "",
+      "last": ""
+    },
+    "userId": "b967dc52-b648-41fa-8f13-0ba557cc1fe3",
+    "userName": "cuongcuong-8611",
+    "displayName": "cuong cuong",
+    "isPrivate": false,
+    "affiliations": [],
+    "followerCount": 0,
+    "followingCount": 0,
+    "answersAccepted": 0,
+    "reputationPoints": 0,
+    "createdOn": "2/21/2026 7:33:30 PM"
+  },
+  "VerifiableCredentials": {
+    "docsId": "b967dc52-b648-41fa-8f13-0ba557cc1fe3",
+    "userCredentials": []
+  },
+  "SkillAssessment": null,
+  "Assessments": null,
+  "Lists": null
+}

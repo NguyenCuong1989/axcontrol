@@ -1,0 +1,64 @@
+version: '3.8'
+
+services:
+  axcontrol:
+    build: .
+    ports:
+      - "8001:8001"
+    environment:
+      # API Settings
+      - API_HOST=0.0.0.0
+      - API_PORT=8001
+      - API_RELOAD=False
+      
+      # OpenAI & LLM
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - OPENAI_MODEL=gpt-4
+      - CLAUDE_API_KEY=${CLAUDE_API_KEY}
+      - GEMINI_API_KEY=${GEMINI_API_KEY}
+      - MISTRAL_API_KEY=${MISTRAL_API_KEY}
+      
+      # Database
+      - DATABASE_URL=${DATABASE_URL}
+      
+      # Monitoring
+      - SENTRY_DSN=${SENTRY_DSN}
+      - GCLOUD_RW_API_KEY=${GCLOUD_RW_API_KEY}
+      
+      # Decision Engine
+      - MAX_ACTION_COUNT=50
+      - TIMEOUT_SECONDS=30
+    depends_on:
+      - postgres
+      - redis
+    networks:
+      - axcontrol-network
+
+  postgres:
+    image: postgres:15-alpine
+    environment:
+      - POSTGRES_DB=aidev
+      - POSTGRES_USER=aidev
+      - POSTGRES_PASSWORD=aidev_password
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - axcontrol-network
+
+  redis:
+    image: redis:7-alpine
+    command: redis-server --requirepass ${REDIS_PASSWORD}
+    environment:
+      - REDIS_PASSWORD=${REDIS_PASSWORD}
+    volumes:
+      - redis_data:/data
+    networks:
+      - axcontrol-network
+
+networks:
+  axcontrol-network:
+    driver: bridge
+
+volumes:
+  postgres_data:
+  redis_data:
